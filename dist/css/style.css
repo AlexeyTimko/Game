@@ -1,0 +1,32 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif; }
+
+a {
+  color: #00B7FF; }
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0; }
+
+.map-row {
+  height: 30px; }
+
+.location {
+  display: inline-block;
+  width: 30px;
+  height: 30px; }
+
+.location.road {
+  background-color: #40a070;
+  cursor: pointer; }
+
+.location.wall {
+  background-color: #8b0c08;
+  cursor: not-allowed; }
+
+.location.active {
+  background-color: #afd900; }
+
+/*# sourceMappingURL=style.css.map */
