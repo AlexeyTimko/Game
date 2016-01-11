@@ -47,7 +47,7 @@ export default Map = function (state = initialState, action) {
     switch (action.type) {
         case 'SET_STATE':
             return {
-                locations: state.locations,
+                ...state,
                 position: '1_0',
                 map: getVisibleMap('1_0', state.locations)
             };
@@ -66,7 +66,7 @@ export default Map = function (state = initialState, action) {
                 map = getVisibleMap(position, state.locations);
             }
             return {
-                locations: state.locations,
+                ...state,
                 position,
                 map
             };
